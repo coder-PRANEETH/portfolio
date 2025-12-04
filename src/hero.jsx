@@ -85,6 +85,7 @@ useEffect(() => {
         <div id ="circle">
           {circles}
           </div>
+          
         <div className="texts">
           <div className="text">
             <div className="hi">I'am Praveen</div>

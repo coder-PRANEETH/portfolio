@@ -63,7 +63,7 @@ span{
     justify-items: right;
     color: aliceblue;
     overflow: hidden;
-    background-image: url('./git.png');
+    background-image: url('./git.svg');
     background-size: contain;
     background-repeat: 
     no-repeat;
@@ -86,7 +86,7 @@ span{
     align-content: center;
     justify-items: right;
     color: aliceblue;
-    background-image: url('./link.png');
+    background-image: url('./link.svg');
     background-position: 0 -4px;
     background-size: contain;
     overflow: hidden;
