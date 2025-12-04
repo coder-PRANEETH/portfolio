@@ -1,0 +1,187 @@
+.cir1  { animation: roll1 4s linear forwards  ; }
+.cir2  { animation: roll2 4s linear forwards; }
+.cir3  { animation: roll3 4s linear forwards; }
+.cir4  { animation: roll4 4s linear forwards; }
+.cir5  { animation: roll5 4s linear forwards; }
+.cir6  { animation: roll6 4s linear forwards; }
+.cir7  { animation: roll7 4s linear forwards; }
+.cir8  { animation: roll8 4s linear forwards; }
+.cir9  { animation: roll9 4s linear forwards; }
+.cir10 { animation: roll10 4s linear forwards; }
+
+.cir11 { animation: roll11 4s linear forwards; }
+.cir12 { animation: roll12 4s linear forwards; }
+.cir13 { animation: roll13 4s linear forwards; }
+.cir14 { animation: roll14 4s linear forwards; }
+.cir15 { animation: roll15 4s linear forwards; }
+.cir16 { animation: roll16 4s linear forwards; }
+.cir17 { animation: roll17 4s linear forwards; }
+.cir18 { animation: roll18 4s linear forwards; }
+.cir19 { animation: roll19 4s linear forwards; }
+.cir20 { animation: roll20 4s linear forwards; }
+
+
+@keyframes roll1 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0;   }
+  50%  { transform: translate(200px,-60px) rotateZ(180deg)  scale(1.4); opacity: .2; }
+  100% { transform: translate(400px,-120px)  scale(1); opacity:0; }
+}
+
+@keyframes roll2 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0;  }
+  50%  { transform: translate(-175px,90px) rotateZ(180deg)  scale(1.4); opacity: .2; }
+  100% { transform: translate(-350px,180px)  scale(1); opacity:0; }
+}
+
+@keyframes roll3 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(250px,125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(500px,250px)  scale(1); opacity:0; }
+}
+
+@keyframes roll4 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-210px,-100px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-420px,-200px)  scale(1); opacity:0; }
+}
+
+@keyframes roll5 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(100px,-100px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(200px,-200px)  scale(1); opacity:0; }
+}
+
+@keyframes roll6 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-250px,75px) rotateZ(180deg)  scale(1.4); opacity: .2; }
+  100% { transform: translate(-500px,150px)  scale(1); opacity:0; }
+}
+
+@keyframes roll7 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(150px,125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(300px,250px)  scale(1); opacity:0; }
+}
+
+@keyframes roll8 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-125px,-125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-250px,-250px)  scale(1); opacity:0; }
+}
+
+@keyframes roll9 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(225px,-125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(450px,-250px)  scale(1); opacity:0; }
+}
+
+@keyframes roll10 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-150px,100px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-300px,200px)  scale(1); opacity:0; }
+}
+
+@keyframes roll11 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(160px,-100px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(320px,-200px)  scale(1); opacity:0; }
+}
+
+@keyframes roll12 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-190px,120px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-380px,240px)  scale(1); opacity:0; }
+}
+
+@keyframes roll13 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(130px,110px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(260px,220px)  scale(1); opacity:0; }
+}
+
+@keyframes roll14 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-235px,-140px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-470px,-280px)  scale(1); opacity:0; }
+}
+
+@keyframes roll15 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(175px,-115px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(350px,-230px)  scale(1); opacity:0; }
+}
+
+@keyframes roll16 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-260px,50px) rotateZ(180deg)  scale(1.4); opacity: .2; }
+  100% { transform: translate(-520px,100px)  scale(1); opacity:0; }
+}
+
+@keyframes roll17 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(210px,105px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(420px,210px)  scale(1); opacity:0; }
+}
+
+@keyframes roll18 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-130px,-125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-260px,-250px)  scale(1); opacity:0; }
+}
+
+@keyframes roll19 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(250px,60px) rotateZ(180deg)  scale(1.4); opacity: .2; }
+  100% { transform: translate(500px,120px)  scale(1); opacity:0; }
+}
+
+@keyframes roll20 {
+  0%   { transform: translate(0,0) scale(1);opacity: 0; }
+  50%  { transform: translate(-170px,125px)rotateZ(180deg)   scale(1.4); opacity: .2; }
+  100% { transform: translate(-340px,250px)  scale(1); opacity:0; }
+}
+
+#circle{
+  pointer-events: none;
+  
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000;
+  background-color: transparent;
+}
+.cir{
+    border-radius: 3px;
+    opacity: 0.2;
+    width: 15px;
+   
+    box-shadow: 0px 0px 30px 12px rgb(187, 60, 212);
+    height: 15px;
+    background: linear-gradient(120deg,  #c18aff,          /* medium lavender */
+  #a86fee,          /* deep strong violet */
+  #8c6ed8,          /* darkest rich purple */
+  #b784f6,          /* back to medium violet */
+  #c18aff   );
+    
+    margin: 5px;
+    
+}
+
+
+
+
+
+
+.hero {
+
+    overflow: hidden;
+}
+
+.cir {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;  
+    pointer-events: none;
+    z-index: 998;
+}

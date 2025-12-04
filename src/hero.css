@@ -1,0 +1,234 @@
+
+.hero{
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    justify-content: center;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    align-items: start;
+}
+
+.hi{
+    white-space: nowrap;
+    font-size: 4rem;
+    background: none;
+    
+    text-decoration: none;
+   
+}
+.iam{
+    white-space: nowrap;
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.buttons{
+    display: flex;
+    height: 80%;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    justify-content: space-between;
+    
+}
+span{
+    margin-left: 30%;
+    color: white;
+    font-weight: 500;
+    background: none;
+    background-color: transparent;
+  }
+  
+.git:active{
+  transform: scale(1.12);
+}
+.link:active{
+  transform: scale(1.12);
+}
+.git{
+  transition: all 40ms ease-in-out;
+    border: rgb(156, 153, 153) solid 1px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 5px;
+  background-color: rgb(14, 11, 11);
+  height: 1.98rem;
+  border-radius: 5px;
+  width: 40%;
+  align-content: center;
+    justify-items: right;
+    color: aliceblue;
+    overflow: hidden;
+    background-image: url('./git.png');
+    background-size: contain;
+    background-repeat: 
+    no-repeat;
+  }
+  
+  a{
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  .link{
+  cursor: pointer;
+    border: rgb(156, 153, 153) solid 1px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #0A66C2;
+    height: 1.98rem;
+    border-radius: 5px;
+    width: 40%;
+    align-content: center;
+    justify-items: right;
+    color: aliceblue;
+    background-image: url('./link.png');
+    background-position: 0 -4px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: 
+    no-repeat;
+    
+
+}
+
+.liner {
+  position: absolute;
+  justify-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 79%;
+  height: 8px;
+  border-radius: 5px;
+
+background: linear-gradient(
+  90deg,
+           /* light white tint */
+          /* soft pale violet */
+  #c18aff,          /* medium lavender */
+  #8c2fff,          /* deep strong violet */
+  #7d107d,          /* darkest rich purple */
+  #8c2fff,          /* back to medium violet */
+  #c18aff          /* lighter lavender */
+         /* pale violet */
+            /* fade back to white */
+);
+  background-size: 300% 100%;  /* stretch the gradient */
+
+  animation: slide 24s ease-in-out infinite, widen 2s ease-in-out forwards;
+  top: 70%;
+  box-shadow: 5px 2px 30px 2px rgb(130, 135, 238);
+}
+
+@keyframes widen {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }   
+    
+}
+@keyframes widen1 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }   
+    
+}
+@keyframes widen2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }   
+    
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -300% 0%;
+  }
+}
+
+.texts{
+
+    width: 60%;
+    height: 100%;
+    justify-self: left;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .text {
+  gap: 2em;
+    backdrop-filter: blur(10px);
+    animation: widen1 2s ease-in-out 0s  forwards ;
+    margin: auto;
+    margin-top: 25%;
+    
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    
+    flex-direction: column;
+    
+    color: white;
+    font-weight: 100;
+}
+
+.img {
+    animation: widen2 2s ease-in-out 0s  forwards ;
+display: flex;
+
+
+  width: 40%;
+  height: 80%;
+  justify-content: center;
+  justify-self: right;
+  transform: rotateX(20deg);
+  align-items: center;
+  justify-self: center;
+
+}
+
+.ima{
+
+  height: 80%;
+  width: 80%;
+  
+  aspect-ratio: 1;
+  --s: 300px; /* adjust to control the size */
+
+  width: 80%; 
+  aspect-ratio: 1;
+  --g:/calc(var(--s)*0.29) calc(var(--s)*0.29) radial-gradient(50% 50%,#000 99%,#0000 101%) no-repeat;
+  mask: calc(50% + var(--s)*0.276) calc(50% + var(--s)*0.157) var(--g),calc(50% + var(--s)*-0.063) calc(50% + var(--s)*0.311) var(--g),calc(50% + var(--s)*-0.316) calc(50% + var(--s)*0.036) var(--g),calc(50% + var(--s)*-0.132) calc(50% + var(--s)*-0.289) var(--g),calc(50% + var(--s)*0.234) calc(50% + var(--s)*-0.215) var(--g),radial-gradient(calc(var(--s)*0.38),#000 99%,#0000 101%) subtract,calc(50% + var(--s)*0.198) calc(50% + var(--s)*0.436) var(--g),calc(50% + var(--s)*-0.353) calc(50% + var(--s)*0.323) var(--g),calc(50% + var(--s)*-0.417) calc(50% + var(--s)*-0.236) var(--g),calc(50% + var(--s)*0.096) calc(50% + var(--s)*-0.469) var(--g),calc(50% + var(--s)*0.476) calc(50% + var(--s)*-0.054) var(--g);
+
+     background-image: url('/human.png');
+     background-position: center;
+     background-position: 40% 40%;
+     background-size: 60%;
+     background-repeat: repeat;
+
+}
+
+
+
+
+
+html, body {
+    overflow-x: hidden;
+}
