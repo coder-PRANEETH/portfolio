@@ -23,9 +23,9 @@
 }
 
 .fi{
-  transform: translateX(-4rem);
+  transform: translateX(calc(-3.5em - 70px));
 }
 .fo{
-  transform: translateX(4rem);
+  transform: translateX(calc(3.5em + 70px));
   
 }

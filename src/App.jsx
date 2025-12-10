@@ -13,6 +13,8 @@ function App() {
       <Nav/>
       <Hero/>
       <About/>
+      <div className="sep"></div>
+
       <Projects/>
       <Exper/>
       <Skill/>

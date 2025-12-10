@@ -1,6 +1,6 @@
 .hexagonal-grid {
   --hex-size: 7.5em;
-  --hex-gap: 20px;
+  --hex-gap: 70px;
 
 
   --hex-center-gradient: linear-gradient(
@@ -74,11 +74,15 @@
   padding: 20px;
 }
 .center .hexagon-inner{
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
+  width: calc(100% - 7px);
+  height: calc(100% - 7px);
   color: #10b981;
 }
+.ski .hexagon-inner{
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
 
+}
 .center .hex-icon{color: #bae7eb;}
 
 .ski .hex-icon{
@@ -90,7 +94,7 @@
 .hexagon-border {
   background: white;
   
-  animation: gradient-rotate 4s linear infinite;
+  animation: gradient-rotate 8s linear infinite;
 }
 
 .hexagon.center .hexagon-border {

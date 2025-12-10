@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Inter:wght@300;400&display=swap');
+
+
+
+
 .contact{
     display: flex;
     flex-direction: row;
@@ -8,5 +14,49 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Obitron', sans-serif;
+
     font-size: 400%;
 }
+.info{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.gmail,.phone,.insta,.linke{
+    height: 30%;
+    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :1em;
+}
+.info span{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+
+}.icon {
+  stroke: white;      /* REQUIRED for hover color to override */
+  transition: all 0.3s ease;
+}
+
+/* Scale + color glow on hover */
+.info div:hover .icon {
+  transform: scale(1.25);
+  stroke: #0a5ba7; 
+}
+
+.contact h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info span {
+  font-family: 'Inter', sans-serif;
+}
+

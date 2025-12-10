@@ -66,7 +66,7 @@ export default function Skill() {
 
  return<>
  <div className="skills">
-<div className="fo">
+<div className="f">
 
 <div className="i"><div className="f"> <HexagonalGrid items = {["Skills"]}/></div></div>
 <div className="f"><div className="f"><HexagonalGrid items={skills[0].items} /></div></div>

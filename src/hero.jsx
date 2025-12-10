@@ -1,8 +1,6 @@
 import "./hero.css"
 import "./background.css"
 
-import human from "/human.jpg"
-import blob from "/blob.svg"
 
 import { useEffect,useState } from "react";
 
