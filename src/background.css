@@ -152,17 +152,12 @@
 }
 .cir{
     border-radius: 3px;
-    opacity: 0.2;
+   
     width: 15px;
    
-    box-shadow: 0px 0px 30px 12px rgb(187, 60, 212);
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
     height: 15px;
-    background: linear-gradient(120deg,  #c18aff,          /* medium lavender */
-  #a86fee,          /* deep strong violet */
-  #8c6ed8,          /* darkest rich purple */
-  #b784f6,          /* back to medium violet */
-  #c18aff   );
-    
+    background-color: #eee9e9;
     margin: 5px;
     
 }

@@ -1,0 +1,168 @@
+.hexagonal-grid {
+  --hex-size: 7.5em;
+  --hex-gap: 20px;
+
+
+  --hex-center-gradient: linear-gradient(
+    135deg,
+   
+    #8b5cf6,
+    #7d7de4,
+    #10b981
+  );
+  --connector-color: rgba(0, 0, 0, 0.5);
+
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  padding: 40px;
+ 
+}
+
+
+.hexagon {
+  position: absolute;
+  width: var(--hex-size);
+  height: calc(var(--hex-size) * 1.1547);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.hexagon-border {
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.hexagon-inner {
+  position: absolute;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  z-index: 11;
+  justify-content: center;
+  font-size: larger;
+  
+}
+
+ .hexagon-border {
+  background: white;
+
+  animation: gradient-rotate 4s linear infinite;
+}
+
+.hexagon.center .hexagon-border {
+  background: var(--hex-center-gradient);
+  animation: gradient-rotate 4s linear infinite;
+}
+
+.hexagon.center .hexagon-inner {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+@keyframes gradient-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.hex-icon {
+ color: whitesmoke;
+ align-items: center;
+ justify-content: center;
+ padding: 20px;
+}
+
+.hexagon.center .hex-icon {
+  color: #f59e0b;
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
+}
+
+/* Connector lines */
+.connector {
+  position: absolute;
+  background: var(--connector-color);
+  z-index: 1;
+}
+
+.connector.horizontal {
+  width: var(--hex-gap);
+  height: 2px;
+}
+
+
+
+/* Hexagon positions */
+.hex-pos-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-left-1 {
+  left: calc(50% - var(--hex-size) - var(--hex-gap));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-left-2 {
+  left: calc(50% - 2 * (var(--hex-size) + var(--hex-gap)));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-left-3 {
+  left: calc(50% - 3 * (var(--hex-size) + var(--hex-gap)));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-right-1 {
+  left: calc(50% + var(--hex-size) + var(--hex-gap));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-right-2 {
+  left: calc(50% + 2 * (var(--hex-size) + var(--hex-gap)));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hex-pos-right-3 {
+  left: calc(50% + 3 * (var(--hex-size) + var(--hex-gap)));
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Connectors positioning */
+.conn-center-left {
+  left: calc(50% - var(--hex-size) / 2 - var(--hex-gap));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.conn-center-right {
+  left: calc(50% + var(--hex-size) / 2);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+

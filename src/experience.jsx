@@ -7,55 +7,82 @@ export default function Exper() {
     <div className="experi">
       <h1>Experiences</h1>
 
+      <div className="celine"></div>
+
       <section>
-        <div className="exp">
 
-          {/* First experience */}
-          <motion.div
-            className="con"
-            initial={{ opacity: 0, scale: 0.9 }}   // grow instead of move
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, amount: 1 }}    // animate only when fully visible
-          >
-            <div className="logo">
+        {/* ---------- Experience 1 ---------- */}
+        <div className="wda">
+          <div className="fullex">
+
+            <div className="expan">
+              <div className="des">
+
+                <div className="logo">
+                  <img src={vite} alt="" />
+                  <h5>ByteIQ Analytics</h5>
+                </div>
+
+                <ul className="desc">
+                  <li><strong>Data Science Intern — Jan 2025 to Now</strong></li>
+                  <li>Led a team of 3 to build a hybrid ETL pipeline using BeautifulSoup, Playwright, and selective LangChain usage.</li>
+                  <li>Extracted structured company data from PDFs & websites, improving analytics accuracy.</li>
+                  <li>Implemented asynchronous processing, reducing extraction time by 30%.</li>
+                  <li>Automated data cleaning & transformation for reliable analytics-ready datasets.</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div className="conl"></div>
+
+            <div className="endl">
+              <div className="end1"></div>
               <img src={vite} alt="" />
-              <div className="date">May - July 2024</div>
+              <div className="end2"></div>
             </div>
 
-            <div className="ex">
-              <h3>Data Science Intern - ByteIQ Analytics</h3>
-              <ul className="det">
-                <li>Led a team of 3 to develop a hybrid ETL pipeline using web scraping alongside selective LangChain usage to extract and structure comprehensive company data from PDFs and websites, enhancing analytics accuracy and business insights.</li>
-                <li>Implemented asynchronous processing to make the process faster, reducing data extraction time by 30% and improving overall efficiency.</li>
-                <li>Automated data cleaning and transformation steps to ensure high-quality, structured datasets for accurate business analytics and reporting.</li>
-              </ul>
-            </div>
-          </motion.div>
+          </div>
 
-          {/* Second experience */}
-          <motion.div
-            className="con"
-            initial={{ opacity: 0, scale: 0.9 }}   // same grow effect
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, amount: 1 }}
-          >
-            <div className="logo">
-              <img src={vite} alt="" />
-              <div className="date">Jan 2025 - Now</div>
-            </div>
-
-            <div className="ex">
-              <h3>BSummer Research Intern - IIT Ropar</h3>
-              <ul className="det">
-                <li>Implemented U-Net architecture for accurate segmentation of multimodal brain tumor images, enabling precise delineation of tumor regions. Achieved a 15% higher Dice coefficient compared to the baseline.</li>
-                <li>Expanded the dataset 3–5× through augmentation techniques to increase diversity and improve model robustness to unseen data.</li>
-              </ul>
-            </div>
-          </motion.div>
-
+          <div className="dat"></div>
         </div>
+
+        {/* ---------- Experience 2 ---------- */}
+        <div className="wda">
+
+          <div className="dat"></div>
+
+          <div className="fullex right">
+
+            <div className="endl">
+              <div className="end1"></div>
+              <img src={vite} alt="" />
+              <div className="end2"></div>
+            </div>
+
+            <div className="conl"></div>
+
+            <div className="expan">
+              <div className="des">
+
+                <div className="logo">
+                  <img src={vite} alt="" />
+                  <h5>IIT Ropar (Summer Research)</h5>
+                </div>
+
+                <ul className="desc">
+                  <li><strong>Summer Research Intern — May to July 2024</strong></li>
+                  <li>Implemented U-Net segmentation for multimodal brain tumor MRI images.</li>
+                  <li>Achieved a 15% higher Dice score compared to baseline segmentation.</li>
+                  <li>Expanded dataset 3–5× using augmentation to increase robustness.</li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </section>
     </div>
   )

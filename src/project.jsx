@@ -34,12 +34,12 @@ export default function Projects() {
             viewport={{ once: true, amount: 0.7 }}
             transition={{ duration: 0.6 }}
           >
-            {/* LOGO + TITLE */}
+        
             <aside>
               <span>{proj.title}</span>
             </aside>
-
-            {/* DETAILS */}
+            <div className="sep"></div>
+        
             <div className="abme">
               <ul>
                 {proj.details.map((line, i) => (

@@ -8,7 +8,7 @@ export default function About() {
     <motion.div 
       className="about"
       id="about"
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.8 }}
     >

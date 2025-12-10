@@ -1,39 +1,72 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+
+
 * {
   font-family: "Roboto", sans-serif;
+  --back :  linear-gradient(270deg,black,rgb(89, 86, 86),black);
 }
 
 *{
-  background-color: #02081f;
-  color: aliceblue;
-
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  margin: 0%;
+  
   
 }
 
 .hero{
-  margin: auto;
-  height: 80vh;
-  width: 80%;
-  padding-top: 3em;
-                          
+
+  color: rgb(0, 0, 0);
+  height: fit-content;
+  position: sticky;
+  width: 99.1vw;
+  background: linear-gradient(90deg,black,rgb(35, 35, 35),#3A3A3A,#3A3A3A,#3A3A3A);
+  padding-top: 10%;
+  z-index: 50;
+  
 }
 .project{
+  color: rgb(71, 70, 70);
   height: fit-content;
-  width: 90%;
-                          
+  width: 99.1vw;
+  background: var(--back);
+
+  margin: 0;
 }
 .about{
   height: 50vh;
-  width: 75%;
-                          
+  width: 99.1vw;
+  margin: 0;
+  background: var(--back);
+  color: rgb(0, 0, 0);
+  z-index: inherit;
+  
 }
 .contact{
-                          
+  color: rgb(71, 70, 70);
+  
+  background: var(--back);
   height: 30vh;
-  width: 100%;
+  width: 99.1vw;
 }
+.experi{
+  width: 99.1vw;
+  height: fit-content;
+  
+  background: var(--back);
+}
+
+
+.skills{
+  
+  background: var(--back);
+  width: 99.1vw;
+  height: fit-content;
+  margin: 0%;
+}
+
 html {
   scroll-behavior: smooth;
 }

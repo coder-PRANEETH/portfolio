@@ -67,7 +67,7 @@ useEffect(() => {
   const interval = setInterval(() => {
     setCircles(prev => [
       ...prev,
-      ...randomcircle(10) 
+      ...randomcircle(7) 
     ]);
    
 
@@ -86,7 +86,6 @@ useEffect(() => {
           {circles}
           </div>
           
-        <div className="texts">
           <div className="text">
             <div className="hi">I'am Praveen</div>
             <div className="iam">Data Scientist</div>
@@ -100,14 +99,14 @@ useEffect(() => {
                 <span> Linkedn</span></a>
               </button>
             </div>
-          </div>
+          
         </div>
 
-        <div className="img">
-<div className="ima"></div>        </div>
+        
+<img className="img" src="human.jpg" alt="" />     </div>
 
         <div className="liner"></div>
-      </div>
+    
     </>
   );
 }
