@@ -60,11 +60,12 @@
 
 
 .skills{
-  
+  overflow: hidden;
   background: var(--back);
   width: 99.1vw;
   height: fit-content;
   margin: 0%;
+  padding-bottom: 30px;
 }
 
 html {

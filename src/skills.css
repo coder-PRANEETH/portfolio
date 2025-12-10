@@ -25,3 +25,7 @@
 .fi{
   transform: translateX(-4rem);
 }
+.fo{
+  transform: translateX(4rem);
+  
+}

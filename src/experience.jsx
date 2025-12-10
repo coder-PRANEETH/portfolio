@@ -13,24 +13,24 @@ export default function Exper() {
 
         {/* ---------- Experience 1 ---------- */}
         <div className="wda">
-          <div className="fullex">
-
+          <motion.div
+            className="fullex"
+            initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <div className="expan">
               <div className="des">
-
                 <div className="logo">
                   <img src={vite} alt="" />
-                  <h5>ByteIQ Analytics</h5>
+                  <h5>ByteQl</h5>
                 </div>
 
                 <ul className="desc">
-                  <li><strong>Data Science Intern — Jan 2025 to Now</strong></li>
-                  <li>Led a team of 3 to build a hybrid ETL pipeline using BeautifulSoup, Playwright, and selective LangChain usage.</li>
-                  <li>Extracted structured company data from PDFs & websites, improving analytics accuracy.</li>
-                  <li>Implemented asynchronous processing, reducing extraction time by 30%.</li>
-                  <li>Automated data cleaning & transformation for reliable analytics-ready datasets.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque ullam aut velit rem, eveniet mollitia,</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus, eum enim soluta maiores sit ipsam quae? Laboriosam vol</li>
                 </ul>
-
               </div>
             </div>
 
@@ -41,19 +41,27 @@ export default function Exper() {
               <img src={vite} alt="" />
               <div className="end2"></div>
             </div>
-
-          </div>
-
-          <div className="dat"></div>
+          </motion.div>
+           <div className="te dat"><span>
+             May 2024 - Present
+            </span>
+             </div>
         </div>
 
         {/* ---------- Experience 2 ---------- */}
         <div className="wda">
+          <div className="dat"><span>
+             May 2024 - Present
+            </span>
+             </div>
 
-          <div className="dat"></div>
-
-          <div className="fullex right">
-
+          <motion.div
+            className="fullex right"
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true,amount:0.3 }}
+          >
             <div className="endl">
               <div className="end1"></div>
               <img src={vite} alt="" />
@@ -64,23 +72,19 @@ export default function Exper() {
 
             <div className="expan">
               <div className="des">
-
                 <div className="logo">
                   <img src={vite} alt="" />
-                  <h5>IIT Ropar (Summer Research)</h5>
+                  <h5>ByteQl</h5>
                 </div>
 
                 <ul className="desc">
-                  <li><strong>Summer Research Intern — May to July 2024</strong></li>
-                  <li>Implemented U-Net segmentation for multimodal brain tumor MRI images.</li>
-                  <li>Achieved a 15% higher Dice score compared to baseline segmentation.</li>
-                  <li>Expanded dataset 3–5× using augmentation to increase robustness.</li>
+                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque ullam aut velit rem, eveniet mollitia,</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit delectus, eum enim soluta maiores sit ipsam quae? Laboriosam vol</li>
                 </ul>
-
               </div>
             </div>
+          </motion.div>
 
-          </div>
         </div>
 
       </section>

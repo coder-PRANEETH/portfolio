@@ -1,13 +1,23 @@
 import "./HexagonalGrid.css";
 
-const Hexagon = ({ icon, position, isCenter }) => (
-  <div className={`hexagon ${position} ${isCenter ? "center" : ""}`}>
+import { motion } from "framer-motion";
+
+const Hexagon = ({ icon, position, isCenter = false }) => (
+  <motion.div
+    className={`hexagon ${position} ${isCenter ? "center" : ""}`}
+    initial={{ opacity: 0}}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.9, ease: "linear" }}
+    viewport={{ once: true, amount: 0.7 }}
+  >
     <div className="hexagon-border" />
     <div className="hexagon-inner">
       <div className="hex-icon">{icon}</div>
     </div>
-  </div>
+  </motion.div>
 );
+
+
 
 // Generate positions dynamically
 function generatePositions(count) {
@@ -41,12 +51,8 @@ export default function HexagonalGrid({ items }) {
   const positions = generatePositions(items.length);
 
   return (
-    <div className="hexagonal-grid">
+    <div className={`${items[0]=="Skills"?"da":""} hexagonal-grid`}>
       <div className="hex-container">
-
-        {/* Connectors remain static (optional) */}
-        <div className="connector horizontal conn-center-left" />
-        <div className="connector horizontal conn-center-right" />
 
         {items.map((icon, index) => (
           <Hexagon

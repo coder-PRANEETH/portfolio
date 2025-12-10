@@ -18,8 +18,19 @@
   align-items: center;
   justify-content: center;
   min-height: 4rem;
+  width: 80%;
   padding: 40px;
+  margin: auto;
  
+}
+.da{
+  align-items: start;
+  justify-content: center;
+  min-height: calc(var(--hex-size) * 1.1557);
+  transform: scale(1.65);
+  margin-bottom: 10px;
+}
+.da .hexagon{
 }
 
 
@@ -35,17 +46,17 @@
 
 
 .hexagon-border {
-    position: absolute;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    z-index: 1;
+  position: absolute;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
 
 .hexagon-inner {
   position: absolute;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background: rgb(0, 0, 0);
   display: flex;
@@ -56,9 +67,29 @@
   
 }
 
- .hexagon-border {
-  background: white;
+.hex-icon {
+  color: rgb(164, 164, 164);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.center .hexagon-inner{
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  color: #10b981;
+}
 
+.center .hex-icon{color: #bae7eb;}
+
+.ski .hex-icon{
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+  
+}
+
+.hexagon-border {
+  background: white;
+  
   animation: gradient-rotate 4s linear infinite;
 }
 
@@ -67,8 +98,13 @@
   animation: gradient-rotate 4s linear infinite;
 }
 
+.ski {
+  transform: scale(1.3);
+   width: calc(var(--hex-size));
+  height: calc(var(--hex-size) * 1.1547);
+}
 .hexagon.center .hexagon-inner {
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(0, 0, 0, 0.95);
 }
 
 @keyframes gradient-rotate {
@@ -80,33 +116,8 @@
   }
 }
 
-.hex-icon {
- color: whitesmoke;
- align-items: center;
- justify-content: center;
- padding: 20px;
-}
-
-.hexagon.center .hex-icon {
-  color: #f59e0b;
-  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.5));
-}
-
-/* Connector lines */
-.connector {
-  position: absolute;
-  background: var(--connector-color);
-  z-index: 1;
-}
-
-.connector.horizontal {
-  width: var(--hex-gap);
-  height: 2px;
-}
 
 
-
-/* Hexagon positions */
 .hex-pos-center {
   left: 50%;
   top: 50%;
@@ -152,17 +163,6 @@
 
 
 
-/* Connectors positioning */
-.conn-center-left {
-  left: calc(50% - var(--hex-size) / 2 - var(--hex-gap));
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-.conn-center-right {
-  left: calc(50% + var(--hex-size) / 2);
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 

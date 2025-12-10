@@ -18,8 +18,7 @@ export default function Skill() {
       "GenAI",
       "RAG",
       "Multimodal RAG",
-      "LangChain",
-      "Vector Databases"
+      "LangChain"
     ]
   },
   {
@@ -67,20 +66,18 @@ export default function Skill() {
 
  return<>
  <div className="skills">
+<div className="fo">
 
-<HexagonalGrid items={skills[0].items} />
-<div className="fi">
-
+<div className="i"><div className="f"> <HexagonalGrid items = {["Skills"]}/></div></div>
+<div className="f"><div className="f"><HexagonalGrid items={skills[0].items} /></div></div>
+<div className="fo"><HexagonalGrid items={skills[3].items} /></div>
 <HexagonalGrid items={skills[1].items} />
-</div>
-<HexagonalGrid items={skills[2].items} />
-<HexagonalGrid items = {["Skills"]}/>
-<HexagonalGrid items={skills[5].items} />
-<div className="fi">
+<div className="fo"><HexagonalGrid  items={skills[4].items} /></div>
+<div className="f"><HexagonalGrid items={skills[2].items} /></div>
+<div className="fi"><HexagonalGrid items={skills[5].items} /></div>
 
-<HexagonalGrid  items={skills[4].items} />
+
 </div>
-<HexagonalGrid items={skills[3].items} />
  </div>
  </>
 }
