@@ -8,15 +8,16 @@
     display: flex;
     flex-direction: row;
     border-top: 1px solid grey;
+    padding: 2.5em 0;
 }
 .contact h3{
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Obitron', sans-serif;
+font-family: 'Obitron', sans-serif;
 
-    font-size: 400%;
+    font-size: 4vw;
 }
 .info{
     width: 65%;

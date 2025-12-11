@@ -23,9 +23,23 @@
 }
 
 .fi{
-  transform: translateX(calc(-3.5em - 70px));
+  transform: translateX(calc(-3.25em - 70px));
 }
 .fo{
-  transform: translateX(calc(3.5em + 70px));
+  transform: translateX(calc(3.25em + 70px));
+  
+}
+
+@media screen  and (max-width:1000px) {
+  .fk{
+    transform: translateX(20px);
+  }
+  .fi{
+  transform: translateX(calc(-5.25vw - 20px));
+}
+.fo{
+  transform: translateX(calc(5.25vw + 20px));
+  
+}
   
 }

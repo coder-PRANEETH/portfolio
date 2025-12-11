@@ -1,6 +1,7 @@
 import "./hero.css"
 import "./background.css"
-
+import git from '/git.png'
+import lin from '/link.png'
 
 import { useEffect,useState } from "react";
 
@@ -90,11 +91,11 @@ useEffect(() => {
             <div className="buttons">
               <button className="git">
                 <a  target="_blank" rel="noopener noreferrer" href="https://www.google.com/url?sa=D&q=https://github.com/Praveen-M54&ust=1764769740000000&usg=AOvVaw3L72S8E_o47Ile1jcICOxF&hl=en" type="blank">   
-                <span>Github</span></a> 
+                <img src={git} alt="" /><span>Github</span></a> 
               </button>
               <button className=" link">
                 <a  target="_blank" rel="noopener noreferrer" href="https://www.google.com/url?sa=D&q=https://www.linkedin.com/in/praveen-maheshwaran-277063225/&ust=1764769740000000&usg=AOvVaw0HiyR-bHbCofBV_W-7h3So&hl=en">  
-                <span> Linkedn</span></a>
+               <img src={lin} alt="" /> <span> Linkedn</span></a>
               </button>
             </div>
           

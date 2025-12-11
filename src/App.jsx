@@ -13,7 +13,7 @@ function App() {
       <Nav/>
       <Hero/>
       <About/>
-      <div className="sep"></div>
+      <div className="sepir"></div>
 
       <Projects/>
       <Exper/>

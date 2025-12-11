@@ -12,6 +12,7 @@
   background-color: transparent;
   color: rgb(255, 255, 255);
   margin: 0%;
+
   
   
 }
@@ -21,7 +22,7 @@
   color: rgb(0, 0, 0);
   height: fit-content;
   position: sticky;
-  width: 99.1vw;
+  width:100vw;
   background: linear-gradient(90deg,black,rgb(35, 35, 35),#3A3A3A,#3A3A3A,#3A3A3A);
   padding-top: 10%;
   z-index: 50;
@@ -30,14 +31,14 @@
 .project{
   color: rgb(71, 70, 70);
   height: fit-content;
-  width: 99.1vw;
+  width: 100vw;
   background: var(--back);
 
   margin: 0;
 }
 .about{
-  height: 50vh;
-  width: 99.1vw;
+  height: fit-content;
+  width: 100vw;
   margin: 0;
   background: var(--back);
   color: rgb(0, 0, 0);
@@ -48,11 +49,12 @@
   color: rgb(71, 70, 70);
   
   background: var(--back);
-  height: 30vh;
-  width: 99.1vw;
+  height: fit-content;
+  width: 100vw;
 }
 .experi{
-  width: 99.1vw;
+  
+  width: 100vw;
   height: fit-content;
   
   background: var(--back);
@@ -62,7 +64,7 @@
 .skills{
   overflow: hidden;
   background: var(--back);
-  width: 99.1vw;
+  width: 100vw;
   height: fit-content;
   margin: 0%;
   padding: 30px 0;
@@ -70,4 +72,12 @@
 
 html {
   scroll-behavior: smooth;
+    overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width:1000px) {
+  .text,.img,.liner{
+    transform: scale(10vw);
+  }
 }

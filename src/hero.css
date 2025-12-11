@@ -4,19 +4,19 @@
     align-items: center;
     letter-spacing: 3px;
     justify-content: center;
-    line-height: 50px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
     align-items: start;
-    min-height: 40vh;
+
 }
 
 
 
 .buttons{
     display: flex;
-    height: 80%;
-    width: 250px;
+    height: 8vw;
+    gap:1em;
+    width: fit-content;
     text-overflow: ellipsis;
   
     
@@ -47,15 +47,29 @@ span{
   background-color: rgb(14, 11, 11);
   height: 1.98rem;
   border-radius: 5px;
-  width: 40%;
+  width:auto;
   align-content: center;
     justify-items: right;
-    color: aliceblue;
-    overflow: hidden;
-    background-image: url('./git.png');
-    background-size: contain;
-    background-repeat: 
-    no-repeat;
+   
+  }
+  .buttons img{
+    height: 90%;
+    width: 25px;
+    
+  }
+  a span{
+    width: 7vw;
+    margin: 0%;
+  }
+  .git a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .link a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   a{
@@ -71,16 +85,11 @@ span{
     background-color: #0A66C2;
     height: 1.98rem;
     border-radius: 5px;
-    width: 40%;
+    width: fit-content;
     align-content: center;
     justify-items: right;
     color: aliceblue;
-    background-image: url('./link.png');
-    background-position: 0 -4px;
-    background-size: contain;
-    overflow: hidden;
-    background-repeat: 
-    no-repeat;
+    
     
 
 }
@@ -124,18 +133,10 @@ span{
     
 }
 
-@keyframes slide {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: -300% 0%;
-  }
-}
 
 
 .text {
-  gap: 5em;
+  gap: 7vw;
   width: 60%;
   height: 100%;
   color: gray;
@@ -144,6 +145,7 @@ span{
   margin: auto;
   display: flex;
   flex-direction: column;
+  
 
 }
 
@@ -152,7 +154,7 @@ span{
 }
 .hi{
     white-space: nowrap;
-    font-size: 700%;
+    font-size: 7vw;
     background: none;
     
     text-decoration: none;
@@ -160,14 +162,49 @@ span{
 }
 .iam{
     white-space: nowrap;
-    font-size: 400%;
+    font-size: 4vw;
 
     font-weight: 600;
 }
 
 .img {
   animation: widen2 2s ease-in-out 0s  forwards ;
-  margin: auto;
-  height: 0%;
+  
+ 
   width: 40%;
+}
+
+@media screen and (max-width:1000px) {
+  .hero{
+    flex-direction: column;
+  }
+  .text{
+    height: 5px;
+    margin: 0;
+    gap: 1em;
+  }
+  .hi,.iam,.buttons{
+    margin: auto;
+    margin-left: 5%;
+  }
+  .hi{
+    margin-top: 60%;
+
+  }
+  .img{
+    width: 70%;
+    margin-left: 40%;
+  }
+
+  .git,.link{
+    height: fit-content ;
+    padding: 3px 15px;
+  }
+  
+  .git span{
+    display: none;
+  }
+  .link span{
+    display: none;
+  }
 }

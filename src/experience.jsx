@@ -9,7 +9,6 @@ export default function Exper() {
     <div className="experi">
       <h1>Experiences</h1>
 
-      <div className="celine"></div>
 
       <section>
 

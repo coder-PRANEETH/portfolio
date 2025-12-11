@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-  transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .nav a:hover {
@@ -58,4 +58,19 @@
 .nav a:hover span{
     
     color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width:1000px) {
+    .nav span{
+
+        font-size: 3vw;
+    }
+    .nav a{
+        border-radius: 20px;
+        height: fit-content;
+        padding: 10px;
+    }
+    .nav{
+        height: 6vw;
+    }
 }

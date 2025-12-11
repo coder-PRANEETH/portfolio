@@ -1,5 +1,5 @@
 .hexagonal-grid {
-  --hex-size: 7.5em;
+  --hex-size: 7.5vw;
   --hex-gap: 70px;
 
 
@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   min-height: 4rem;
-  width: 80%;
+  width:fit-content;
   padding: 40px;
   margin: auto;
  
@@ -30,8 +30,7 @@
   transform: scale(1.65);
   margin-bottom: 10px;
 }
-.da .hexagon{
-}
+
 
 
 .hexagon {
@@ -164,7 +163,31 @@
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width:1000px) {
+  .hexagonal-grid {
+  --hex-size: 10.5vw;
+      --hex-gap: 20px;
+      min-height: 1vw;
+      height: 2vw;
 
+}
+.ski {
+  transform: scale(1.002);
+ 
+}
+.da{
+  padding-top: 30px;
+  min-height: calc(var(--hex-size) * 1.3557);
+}
+
+.hexagon-inner{
+
+  font-size: 20px;
+}
+
+.hex-icon {
+  color: rgb(255, 255, 255);
+}}
 
 
 

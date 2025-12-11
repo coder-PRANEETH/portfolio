@@ -31,6 +31,7 @@ export default function About() {
         <span>
 {about}        </span>
       </motion.div>
+      
     </motion.div>
     
   );

@@ -28,10 +28,6 @@ export default function Contact() {
             <span>LinkedIn</span>
           </div>
 
-          <div className="insta">
-            <FaInstagram size={28} className="icon" />
-            <span>@praveensw258</span>
-          </div>
 
         </div>
       </div>

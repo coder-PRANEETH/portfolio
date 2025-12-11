@@ -6,6 +6,10 @@
 }
 
 .experi h1{
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    height: fit-content;
+  
      text-align: left;
     margin-left: 4%;
     letter-spacing: 5px;
@@ -21,7 +25,7 @@ section{
 }
 .wda{
     width: 100%;
-    height: 40%;
+    
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -55,7 +59,7 @@ text-align: right;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
+
     transition: all 200ms linear;
 }
 .right{
@@ -75,9 +79,9 @@ text-align: right;
     width: 60%;
     border-bottom: rgb(162, 162, 162) 3px solid;
     border-right: rgb(163, 161, 161) 2px solid;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(24, 24, 24);
     height: fit-content;
-    overflow: hidden;
+    
     padding: 1%;
     border-radius: 0px 10px 0px 10px;
     display: flex;
@@ -98,7 +102,7 @@ text-align: right;
 .desc {
     display: flex;
     flex-direction: column;
-gap: 1em;
+    gap: 1em;
 }
 .right  .expan{
     border-radius: 10px 0 10px 0;
@@ -113,7 +117,7 @@ gap: 1em;
     background-color: rgb(128, 128, 129);
 }
 .logo{
-    width: 100%;
+    width: 90%;
     height: 20%;
     display: flex;
     padding: 10px;
@@ -137,7 +141,7 @@ gap: 1em;
     align-items: center;
     
     z-index: 31;
-   
+    
 }
 .right .end2{
     background-color: transparent;
@@ -160,7 +164,61 @@ gap: 1em;
 }
 .sepi{
     margin: auto;
+    margin-top: 30px;
     width: 30%;
     background-color: rgb(117, 117, 117);
     height: 1px;
+}
+
+@media screen and (max-width:1000px) {
+    .experi h1{
+        font-size: 7vw;
+        margin-bottom: 1em;
+         background-color: rgb(158, 160, 161);
+    color: black;
+    border-radius: 12px;
+    margin-left: 0%;
+    padding-left: 5%;
+    }
+    .wda{
+        justify-content: center;
+    }
+    .experi{
+        padding-top: 2em;
+    }
+    .dat{
+        display: none;
+    }
+    .desc{
+
+        padding-bottom: 15px;
+    }
+    
+    .fullex{
+        width: 80vw;
+        flex-direction: column;
+    }
+    .expan{
+        height: fit-content;
+        font-size: 3vw;
+            border-left: rgb(138, 138, 138) 2px solid;    
+        }
+        .right .expan{
+            border-radius: 15px;   
+        border-right: rgb(138, 138, 138) 2px solid;       
+
+    }
+    .des h5{
+        font-size: 4vw;
+    }
+    .conl{
+        display: none;
+    }
+    .end1{
+        background-color: aliceblue;
+        height: 50px;
+    }
+    .right .end2{
+        background-color: aliceblue;
+    }
 }
