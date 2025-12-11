@@ -1,7 +1,7 @@
 import "./about.css";
 import { motion } from "framer-motion";
 
-const about = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt consequuntur modi vitae cumque suscipit praesentium soluta molestiae dignissimos ratione debitis, tempora libero voluptate velit voluptates quibusdam asperiores dolores consectetur?";
+const about = "AI Engineer with experience in multimodal RAG, data pipelines, deep learning, and medical image analysis. I build scalable AI systems using Python, LangChain, TensorFlow, PyTorch, and AWS. Passionate about combining data, automation, and machine learning to solve real-world problems.AI Engineer with experience in multimodal RAG, data pipelines, deep learning, and medical image analysis. I build scalable AI systems using Python, LangChain, TensorFlow, PyTorch, and AWS. Passionate about combining data, automation, and machine learning to solve real-world problems.";
 
 export default function About() {
   return (

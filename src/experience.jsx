@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 export default function Exper() {
   return (
     <div className="experi">
-      <h1>Experiences</h1>
+      <h1>EXPERIENCE</h1>
 
 
       <section>

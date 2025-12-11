@@ -24,8 +24,10 @@ export default function Contact() {
           </div>
 
           <div className="linke">
+            <a href="https://www.linkedin.com/in/praveen-maheshwaran-277063225/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={28} className="icon" />
             <span>LinkedIn</span>
+            </a>
           </div>
 
 

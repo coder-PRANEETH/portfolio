@@ -6,12 +6,9 @@ import lin from '/link.png'
 import { useEffect,useState } from "react";
 
 function getHeroSize() {
-  const el = document.querySelector(".hero");
-  if (!el) return { width: 0, height: 0 };
-
   return {
-    width: el.clientWidth,
-    height: el.clientHeight
+    width: window.innerWidth,
+    height: window.innerHeight
   };
 }
 
@@ -59,22 +56,27 @@ export default function Hero() {
   const [circles, setCircles] = useState([]);
 
 useEffect(() => {
-  
-  setCircles(randomcircle(10));
+  function getConfig() {
+    const width = window.innerWidth;
+    return width > 1000
+      ? { count: 12, interval: 2000 }
+      : { count: 7, interval: 3000 };
+  }
 
-  
-  const interval = setInterval(() => {
-    setCircles(prev => [
-      ...prev,
-      ...randomcircle(20) 
-    ]);
-   
+  const { count, interval } = getConfig();
 
 
-  }, 2000);
+  setCircles(randomcircle(count));
 
-  return () => clearInterval(interval);
+
+  const id = setInterval(() => {
+    setCircles(prev => [...prev, ...randomcircle(count)]);
+  }, interval);
+
+
+  return () => clearInterval(id);
 }, []);
+
 
 
   return (

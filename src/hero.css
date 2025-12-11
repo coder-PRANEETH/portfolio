@@ -45,16 +45,17 @@ span{
   margin-top: 10px;
   margin-right: 5px;
   background-color: rgb(14, 11, 11);
-  height: 1.98rem;
+  height: fit-content;
   border-radius: 5px;
   width:auto;
   align-content: center;
     justify-items: right;
-   
+    padding: 1vh;
+    
   }
   .buttons img{
-    height: 90%;
-    width: 25px;
+    height: 100%;
+    width: 30px;
     
   }
   a span{
@@ -78,13 +79,14 @@ span{
   }
   
   .link{
-  cursor: pointer;
+    cursor: pointer;
     border: rgb(156, 153, 153) solid 1px;
     margin-top: 10px;
     margin-right: 5px;
     background-color: #0A66C2;
-    height: 1.98rem;
+    height:fit-content;
     border-radius: 5px;
+    padding: 1vh;
     width: fit-content;
     align-content: center;
     justify-items: right;
@@ -136,7 +138,7 @@ span{
 
 
 .text {
-  gap: 7vw;
+  gap: 3vw;
   width: 60%;
   height: 100%;
   color: gray;
@@ -151,6 +153,11 @@ span{
 
 .hi,.iam,.buttons{
   margin-left: 20%;
+   text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
 }
 .hi{
     white-space: nowrap;
@@ -176,24 +183,30 @@ span{
 
 @media screen and (max-width:1000px) {
   .hero{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .text{
-    height: 5px;
-    margin: 0;
-    gap: 1em;
+    height: fit-content;
+    
+    margin-top: -30vw;
+    gap: 0.5em;
+    transform: translateX(-5vw);
   }
   .hi,.iam,.buttons{
     margin: auto;
     margin-left: 5%;
   }
   .hi{
-    margin-top: 45%;
+    /* margin-top: 45%; */
     font-size: 9vw;
   }
+  .iam{
+    font-size: 6vw;
+  }
   .img{
-    width: 70%;
+    width: 100%;
     margin-left: 40%;
+    margin: auto;
   }
 
   .git,.link{
