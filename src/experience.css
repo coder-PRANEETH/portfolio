@@ -195,7 +195,7 @@ text-align: right;
     }
     
     .fullex{
-        width: 80vw;
+        width: 90vw;
         flex-direction: column;
     }
     .expan{
@@ -209,14 +209,20 @@ text-align: right;
 
     }
     .des h5{
+        font-size: 6vw;
+    }
+    .desc{
         font-size: 4vw;
+    }
+    .logo{
+        height: fit-content;
     }
     .conl{
         display: none;
     }
     .end1{
         background-color: aliceblue;
-        height: 50px;
+        height: 250px;
     }
     .right .end2{
         background-color: aliceblue;

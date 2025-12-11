@@ -21,7 +21,7 @@
     box-shadow: inset 0 0 10px 2px rgba(255, 255, 255, 0.2);
     background-color: black;
     padding: 10px;
-    height: fit-content;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(255, 255, 255, 0.773);
@@ -129,32 +129,55 @@ ul{
     padding-left: 5%;
 
     }
+
+    .sepir{
+        display: none;
+    }
     .projs{
         width: 90%;
+    }
+    .project{
+        margin: auto;
+
     }
     .viewpro{
         padding: 14px;
         font-size: xx-large;
         border-radius: 12px;
-        
-            box-shadow: 0 0 40px 1px rgba(255, 255, 255, 0.601);
+        background-color: aliceblue;
+        color: #000;
 
     }
     .pro{
         width: 80%;
         padding: 20px;
+        height: fit-content;
+        margin-left:auto ;
+        margin-right:auto ;
     }
-    aside span{
+    .pro aside span{
+        font-size: 6vw;
+        padding: 20px;
+    }
+    .pro .abme .uli{
         font-size: 4vw;
-    }
-    .abme span{
-        font-size: 3vw;
+        margin-left: 0%;
         
+    }
+    .pro .abme{
+        padding: 20px;
+        padding-left: 0%;
+        display: flex;
     }
     .li{
         padding: 0;
     }
     ul{
-        padding-left: 3vw;
+        gap: 3em;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+       
+        overflow: hidden;
     }
 }

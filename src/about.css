@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla:EDPT,EHLT@45,2&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
 .about{
     display: flex;
     align-items: center;
@@ -48,19 +52,38 @@ aside span {
 }
 
 @media screen and (max-width:1000px) {
+    .about{
+        flex-direction: column;
+    }
+    
     aside{
         font-size: 5vw;
         display: flex;
         align-items: center;
+        justify-content: left;
+        width: 100%;
     }
-    aside sppan{
-        margin: auto;
+    .about aside span{
+          background-color: rgb(158, 160, 161);
+    color: black;
+    border-radius: 12px;
+    margin-left: 0%;
+    padding-left: 5%;
+    padding-right: 2%;
+        font-family:  "PT Serif", 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 50px 0px 50px 0px;
+        font-size: 7vw;
+        font-weight: bold;
     }
     .abme{
         font-size: 2vw;
+        width: 80%;
+        margin-left: 10%;
     }
+    
     .abme span{
         line-height: 2em;
+        font-size: 4vw;
     }
     .abme{
         padding: 20px;

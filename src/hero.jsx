@@ -66,7 +66,7 @@ useEffect(() => {
   const interval = setInterval(() => {
     setCircles(prev => [
       ...prev,
-      ...randomcircle(7) 
+      ...randomcircle(20) 
     ]);
    
 
